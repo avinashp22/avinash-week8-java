@@ -1,4 +1,7 @@
 package programme_21_abstractexample;
 
-public class Shape {
+public abstract class Shape {
+
+    public void draw (){}
+
 }

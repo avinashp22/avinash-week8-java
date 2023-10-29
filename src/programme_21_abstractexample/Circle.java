@@ -1,4 +1,12 @@
 package programme_21_abstractexample;
 
-public class Circle {
+public class Circle extends Shape {
+
+    public void draw (){
+        System.out.println("drawing a circle");
+
+    }
+
+
+
 }
