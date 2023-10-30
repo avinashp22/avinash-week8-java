@@ -17,7 +17,7 @@ public class Programme_15_LeftTriangleStar {
 
     public static void main(String[] args) {
         Scanner scr = new Scanner(System.in);
-        System.out.print("Enter the number : ");
+        System.out.print("Enter the number of rows: ");
         int a = scr.nextInt();
         triangle();
     }

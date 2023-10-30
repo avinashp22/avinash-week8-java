@@ -4,7 +4,7 @@ public class Programme_14_DiamondPattern {
 
         public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
-            System.out.println("Enter N : ");
+            System.out.println("Enter Number of rows : ");
             int n = sc.nextInt();
             System.out.print("Enter Symbol : ");
             char c = sc.next().charAt(0);
