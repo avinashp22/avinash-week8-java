@@ -1,3 +1,9 @@
+/**
+ * You have to represent a point in 2D space. Write a class with the name Point.
+ * The class needs two fields (instance variables) with name x and y of type int.
+ * The class needs to have two constructors. The first constructor does not have any parameters (no-arg constructor).
+ * The second constructor has parameters x and y of type int and it needs to initialize the fields.
+ */
 public class Programme_16_Point {
 
     int x;
@@ -26,15 +32,15 @@ public class Programme_16_Point {
         return distance (point2.x, point2.y);
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { //main method
         Programme_16_Point first = new Programme_16_Point(6,5);
         Programme_16_Point second = new Programme_16_Point(3,1);
-        System.out.println("Distance(0,0) = " + first.distance());
-        System.out.println("Distance(second) = " + first.distance(second));
-        System.out.println("Distance(2,2) = " + first.distance(2,2));
+        System.out.println("Distance(0,0) = " + first.distance()); //print statement
+        System.out.println("Distance(second) = " + first.distance(second)); //print statement
+        System.out.println("Distance(2,2) = " + first.distance(2,2)); //print statement
 
         Programme_16_Point point = new Programme_16_Point(0,0);
-        System.out.println("Distance() =  "  + point.distance());
+        System.out.println("Distance() =  "  + point.distance()); //print statement
     }
 
 }

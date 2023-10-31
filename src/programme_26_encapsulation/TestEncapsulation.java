@@ -1,3 +1,6 @@
+/**
+ * Encapsulations example (Create package name ‘encapsulation26’ and create all below classes in this package)
+ */
 package programme_26_encapsulation;
 
 public class TestEncapsulation {

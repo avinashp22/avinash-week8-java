@@ -1,3 +1,6 @@
+/**
+ * Pool Area (Create package name ‘pool_area’ and create all below classes in this package)
+ */
 package programme_20_pool_area;
 
 public class Main {

@@ -1,7 +1,15 @@
 import java.util.Scanner;
 
+/**
+ * Display right angle triangle of @ using nested for loops
+ *
+ * @
+ * @@
+ * @@@
+ * @@@@
+ * @@@@@
+ */
 public class Programme_8_SymbolTriangle {
-
 
 
     public static void triangle(int n) {

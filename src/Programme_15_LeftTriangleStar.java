@@ -1,10 +1,18 @@
 import java.util.Scanner;
 
+/**
+ * Display left angle triangle of * using nested for loops
+ * *
+ * * *
+ * * * *
+ * * * * *
+ * * * * * *
+ */
 public class Programme_15_LeftTriangleStar {
-
+    //logic calculations
     public static void triangle() {
-       int a = 6;
-        for (int i = 1; i <=a; i++) {
+        int a = 6;
+        for (int i = 1; i <= a; i++) {
             for (int k = 1; k <= a - i + 1; k++) {
                 System.out.print("");
             }
@@ -16,10 +24,11 @@ public class Programme_15_LeftTriangleStar {
     }
 
     public static void main(String[] args) {
-        Scanner scr = new Scanner(System.in);
-        System.out.print("Enter the number of rows: ");
-        int a = scr.nextInt();
-        triangle();
+        Scanner scn = new Scanner(System.in); //scanner declaration
+        System.out.print("Enter the number of rows: "); //print statement
+        int a = scn.nextInt();
+        scn.close();//scanner close
+        triangle(); // calling static method
     }
 }
 

@@ -1,5 +1,10 @@
 import java.util.Scanner;
 
+/**
+ * Write a method named sumFirstAndLastDigit with one parameter of type int called number.
+ * The method needs to find the first and the last digit of the parameter number passed to the method, using a loop and return the sum of the first and the last digit of that number.
+ * If the number is negative then the method needs to return -1 to indicate an invalid value.
+ */
 public class Programme_7_FirstAndLastDigitSum {
 
     public static int digit (int number) {
@@ -18,12 +23,12 @@ public class Programme_7_FirstAndLastDigitSum {
     }
 
     public static void main(String[] args) {
-        //Scanner declaration for reading input form console
+        //Scanner declaration
         Scanner scn = new Scanner(System.in);
         System.out.println("Enter 2 digit number ");
         int a = scn.nextInt();
         System.out.println("The sum of first & last digit is " + digit(a));
-        // closing the scanner object
+        //scanner close
         scn.close();
     }
 
