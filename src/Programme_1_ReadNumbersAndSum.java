@@ -7,31 +7,35 @@ import java.util.Scanner;
 public class Programme_1_ReadNumbersAndSum {
 
     public static void main(String[] args) { //main method
-
-        Scanner scn = new Scanner(System.in); //scanner declaration
-        System.out.println("Enter 10 numbers"); //print statement
         Programme_1_ReadNumbersAndSum obj = new Programme_1_ReadNumbersAndSum();//object creation
-        obj.maths(scn);
-        scn.close(); //scanner close
+        obj.maths();
     }
 
-    public void maths(Scanner scn) {
-        int a = 1;
+    public void maths() {
+        //Scanner declaration
+        Scanner scanner = new Scanner(System.in);
+        int counter = 0;
         int sum = 0;
-
-        while (a <= 10) {
-            System.out.println("Enter number " + a + " in sequence to be added"); //print statement
-            //logic calculations
-            if (scn.hasNextInt()) {
-                int number = scn.nextInt();
+        while (true) {
+            int order = counter + 1;
+            System.out.println("Enter number #" + order + ":");
+            boolean isAnInt = scanner.hasNextInt();
+            if (isAnInt) {
+                int number = scanner.nextInt();
+                counter++;
                 sum += number;
-                a++;
+                if (counter == 10) {
+                    break;
+                }
             } else {
-                System.out.println("Invalid Number. Please enter a valid number"); //print statement
+                System.out.println("Invalid number");
             }
+            scanner.nextLine(); // handle end of line (enter key)
         }
-        System.out.println("Sum of the entered numbers: " + sum); //print statement
-
+        System.out.println("sum = " + sum);
+        // closing the scanner
+        scanner.close();
     }
+
 
 }
